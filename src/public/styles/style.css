@@ -1,0 +1,11 @@
+:root {
+  --links: #08d4ee;
+  --background-body: #1a2125;
+  --background: #2f3e46;
+  --text-bright: #de9b38;
+}
+
+article {
+  border-top: 1px solid var(--background);
+  padding: 1em;
+}

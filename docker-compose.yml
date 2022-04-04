@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nodejs-docker-webapp:
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 1337:8080
+    # command: npm start
+    command: npm run start:prod
