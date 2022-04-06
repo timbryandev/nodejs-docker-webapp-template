@@ -10,8 +10,10 @@ local,dev,prod ect
 
 ## Perquisites
 
-- [node@16](https://nodejs.org/en/)
-- [npm@8](https://www.npmjs.com/)
+**Note** Node and NPM are only required for local development
+
+- [node>=16](https://nodejs.org/en/)
+- [npm>=8](https://www.npmjs.com/)
 - [Docker](https://www.docker.com/)
 - [docker-compose](https://docs.docker.com/compose/)
 
@@ -21,13 +23,13 @@ These `npm` commands will help you build your project locally
 
 ```bash
 # run dev env via nodemon on port 1337
-npm run dev
+npm run start
 
 # fix js and style linting issues
 npm run fix
 
 # test the [production] build as it will be ran in the docker container
-npm run start
+npm run start:prod
 ```
 
 ## Production Deployment
